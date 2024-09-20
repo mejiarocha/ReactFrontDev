@@ -31,6 +31,19 @@ export const EditEmploye = async (e: any) => {
   }
 };
 
+//delete by id
+export const deleteById = async (id: any) => {
+  try {
+
+    const response = await axios.delete(
+      `http://localhost:5045/api/Empleado/Delete/${id}`
+    );
+    return response.data;
+  } catch (error) {
+    console.log(error);
+  }
+};
+
 // getAll
 export const GetAllEmployees = async () => {
   try {

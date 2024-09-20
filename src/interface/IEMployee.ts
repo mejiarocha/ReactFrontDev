@@ -1,5 +1,5 @@
 export interface IEmployee {
-    idEmployee?: number,
+    idEmpleado?: number,
     nombre: string,
     correo: string,
     sueldo: number

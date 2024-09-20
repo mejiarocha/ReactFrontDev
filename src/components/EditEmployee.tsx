@@ -37,13 +37,10 @@ export function EditEmployee() {
     if (id) {
       try {
         const response = await getById(id);
-        console.log(typeof(response));
-        console.log(typeof(initialEmp));
         setEmployee(response);
       } catch (error) {
         
       }
-      console.log("initialEMp", initialEmp);
     } else {
       console.error("ID is undefined");
     }
