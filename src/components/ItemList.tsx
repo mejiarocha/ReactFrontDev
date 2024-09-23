@@ -53,7 +53,8 @@ export function ItemList() {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          await deleteById(id.toString());
+        // convert id into string
+          await deleteById(id);
         } catch (error) {
           console.log("No fue posible");
         }
